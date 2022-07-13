@@ -306,19 +306,23 @@
         e.stopPropagation();
         $('div.custom-select.active').not(this).each(function(){
             $(this).removeClass('active').next('ul.select-options').hide();
+            $(".contact-us .contact-wrp form button").removeClass('mt-200');
         });
         $(this).toggleClass('active').next('ul.select-options').slideToggle();
+        $(".contact-us .contact-wrp form button").toggleClass('mt-200');
     });
   
     $optionlistItems.click(function(e) {
         e.stopPropagation();
         $customSelect.text($(this).text()).removeClass('active');
+        $(".contact-us .contact-wrp form button").removeClass('mt-200');
         $this.val($(this).attr('rel'));
         $optionlist.hide();
     });
   
     $(document).click(function() {
         $customSelect.removeClass('active');
+        $(".contact-us .contact-wrp form button").removeClass('mt-200');
         $optionlist.hide();
     });
 

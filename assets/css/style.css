@@ -562,6 +562,17 @@ h2 {
     padding-bottom: 40px;
   }
 }
+.stages .stages-wrp .slick-slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.stages .stages-wrp .slick-active {
+  opacity: 1 !important;
+  transition: opacity 0.5s ease-in;
+}
+.stages .stages-wrp .slick-cloned {
+  opacity: 0.3;
+}
 .stages .stages-wrp .progress {
   display: none;
 }
@@ -686,8 +697,10 @@ h2 {
     display: none;
   }
 }
-.stages .stages-wrp .stages-text-wrp .count {
-  display: none;
+@media screen and (max-width: 800px) {
+  .stages .stages-wrp .stages-text-wrp .count {
+    display: none;
+  }
 }
 .stages .stages-wrp .stages-text {
   padding-top: 70px;
@@ -954,6 +967,9 @@ h2 {
   align-items: flex-end;
   margin-top: 20px;
 }
+.contact-us .contact-wrp .cont-content-wrp:first-child {
+  margin-top: 0;
+}
 .contact-us .contact-wrp .cont-content-wrp .adapt-con {
   display: none;
   margin-bottom: 16px;
@@ -1077,12 +1093,16 @@ h2 {
   align-items: center;
   padding: 15px 30px;
   margin-top: 40px;
+  transition: 0.5s all;
 }
 @media screen and (max-width: 880px) {
   .contact-us .contact-wrp form button {
     padding: 16px 24px;
     margin-top: 16px;
   }
+}
+.contact-us .contact-wrp form .mt-200 {
+  margin-top: 200px;
 }
 .contact-us .contact-wrp form input, .contact-us .contact-wrp form .custom-select {
   width: 570px;
@@ -1136,7 +1156,7 @@ h2 {
   }
 }
 .contact-us .contact-wrp form .active {
-  height: 200px;
+  height: 220px;
 }
 @media screen and (max-width: 880px) {
   .contact-us .contact-wrp form .active {
