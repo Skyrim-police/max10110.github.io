@@ -245,7 +245,7 @@ header .nav .logo {
 }
 header .nav .contact-button {
   display: flex;
-  padding: 15px 30px;
+  padding: 10px 20px;
   background: #B58CDD;
   box-shadow: 0px 4px 15px rgba(72, 36, 107, 0.2);
   border-radius: 30px;
