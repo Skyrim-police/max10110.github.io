@@ -913,6 +913,24 @@ h2{
         }
          
         form{
+            button{
+                background: #70CFCB;
+                box-shadow: 0px 4px 15px rgba(72, 36, 107, 0.2);
+                border-radius: 30px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px 30px;
+                margin-top: 20px;
+                @media screen and (max-width: 880px) {
+                    padding: 16px 24px;
+                    margin-top: 16px;
+                }
+            }
             input, select{
                 width: 570px;
                 height: 59px;

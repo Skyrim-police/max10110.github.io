@@ -1004,6 +1004,26 @@ h2 {
     margin-right: 8px;
   }
 }
+.contact-us .contact-wrp form button {
+  background: #70CFCB;
+  box-shadow: 0px 4px 15px rgba(72, 36, 107, 0.2);
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 880px) {
+  .contact-us .contact-wrp form button {
+    padding: 16px 24px;
+    margin-top: 16px;
+  }
+}
 .contact-us .contact-wrp form input, .contact-us .contact-wrp form select {
   width: 570px;
   height: 59px;
