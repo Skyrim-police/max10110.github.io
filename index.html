@@ -299,7 +299,7 @@
     }
   
     var $optionlistItems = $optionlist.children('li');
-  
+    $optionlist.hide();
     $customSelect.click(function(e) {
         e.stopPropagation();
         $('div.custom-select.active').not(this).each(function(){

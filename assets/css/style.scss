@@ -960,13 +960,13 @@ h2{
                 justify-content: center;
                 align-items: center;
                 padding: 15px 30px;
-                margin-top: 20px;
+                margin-top: 40px;
                 @media screen and (max-width: 880px) {
                     padding: 16px 24px;
                     margin-top: 16px;
                 }
             }
-            input, select{
+            input, .custom-select{
                 width: 570px;
                 height: 59px;
                 background: #FFFFFF;
@@ -990,18 +990,35 @@ h2{
                     width: 95%;
                 }
             }
+            .custom-select{
+                display: flex;
+                align-items: flex-start;
+                width: 518px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #70CFCB;
+                transition: 0.5s all;
+                padding-top: 20px;
+                height: 37px;
+            }
+            .active{       
+                height: 200px;
+            }
+            .select-options{
+                flex-direction: column;
+                background: transparent;
+                li{
+                    display: flex;
+                    justify-content: flex-start;
+                    padding-left: 50px;
+                    &:hover{
+                        color: #70CFCB;
+                    }
+                }
+            }
             input{
                 margin-bottom: 20px;
-            }
-            select{
-                color: #70CFCB;
-                cursor: pointer;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                background-image: url("../img/ar-dwn.svg");
-                background-repeat: no-repeat;
-                background-position-x: 95%;
-                background-position-y: 50%;
             }
         }
     }
@@ -2006,7 +2023,7 @@ footer{
     position: relative;
     font-size: 16px;
     color: #fff;
-    width: 100%;
+    width: 570px;
     height: 40px;
 }
 select {
@@ -2021,31 +2038,28 @@ select {
     font-family: monospace;
 }
 .custom-select {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
     background-color: #fff;
     color: #9E9E9E;
-    padding: 8px 15px;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
+    display: flex;
+    align-items: center;
 }
 .custom-select:after {
     content: "";
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-color:#9E9E9E transparent transparent transparent;
+    background-image: url("../img/ar-dwn.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 16px;
-    right: 10px;
-    transform: rotateZ(0deg);
+    right: 39px;
+    top: 9px;
     transition: all 0.5s;
-    transform-origin: 50% 25%;
 }
 /*.custom-select:hover {
     background-color: #b83729;
@@ -2056,9 +2070,8 @@ select {
     color: #9E9E9E;
 }
 .custom-select:active:after, .custom-select.active:after {
-    transform: rotateZ(180deg);
+    transform: rotate(180deg);
     transition: all 0.5s;
-    transform-origin: 50% 25%;
 }
 .custom-select:focus{
    outline: 2px;
@@ -2075,26 +2088,16 @@ select {
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color: #AED581;
-    border-radius: 0px 0px 5px 5px;
 }
 .select-options li {
     color: #424242;
     margin: 0;
-    padding: 12px 0;
-   /* text-indent: 15px;
-   */
-   /* border-top: 1px solid #AED581;
-   */
+    padding: 20px 0;
     -moz-transition: all 0.15s ease-in;
     -o-transition: all 0.15s ease-in;
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
     padding-left: 15px;
-}
-.select-options li:hover {
-    color: #424242;
-    background: #fff;
 }
 .select-options li[rel="hide"] {
     display: none;
