@@ -255,7 +255,7 @@ header .header-content-wrp {
 }
 @media screen and (max-width: 670px) {
   header .header-content-wrp {
-    height: 70vh;
+    height: 95vh;
   }
 }
 header .header-content-wrp h1 {
