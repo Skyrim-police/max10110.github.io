@@ -36,6 +36,11 @@ a {
 .index-header {
   height: 100vh;
 }
+@media screen and (max-width: 670px) {
+  .index-header {
+    height: auto;
+  }
+}
 
 header {
   position: relative;
@@ -79,6 +84,7 @@ header nav .adapt-wrp-nav .menu__mobile {
   justify-content: center;
   height: 20px;
   display: none;
+  width: 44px;
 }
 header nav .adapt-wrp-nav .menu__mobile_button {
   position: relative;
@@ -130,6 +136,7 @@ header nav .adapt-wrp-nav .menu__mobile_button:after {
   header nav .adapt-wrp-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding-right: 16px;
     padding-left: 16px;
@@ -246,6 +253,11 @@ header .header-content-wrp {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 670px) {
+  header .header-content-wrp {
+    height: 70vh;
+  }
+}
 header .header-content-wrp h1 {
   font-weight: 600;
   font-size: 75px;
@@ -263,14 +275,13 @@ header .header-content-wrp h1 {
     font-size: 50px;
     line-height: 60px;
     color: #fff;
+    margin-top: 154px;
   }
 }
 @media screen and (max-width: 440px) {
   header .header-content-wrp h1 {
     font-size: 34px;
     line-height: 44px;
-    margin-top: 150px;
-    margin-top: 214px;
   }
 }
 header .header-content-wrp hr {
@@ -303,7 +314,7 @@ header .header-content-wrp .quote {
 }
 @media screen and (max-width: 440px) {
   header .header-content-wrp .quote {
-    margin-top: 150px;
+    margin-top: 10vh;
   }
 }
 header .header-content-wrp .quote p {
@@ -333,6 +344,11 @@ h2 {
   margin-top: 100px;
   position: relative;
 }
+@media screen and (max-width: 670px) {
+  .services {
+    margin-top: 35px;
+  }
+}
 .services .blur {
   position: absolute;
   z-index: -1;
@@ -353,6 +369,7 @@ h2 {
 @media screen and (max-width: 880px) {
   .services .services-wrp {
     border-bottom: none;
+    padding-bottom: 40px;
   }
 }
 @media screen and (max-width: 1180px) {
@@ -572,8 +589,18 @@ h2 {
 .stages .stages-wrp .arrows-vert-wrp .next-v {
   transform: rotate(-90deg);
 }
+@media screen and (max-width: 800px) {
+  .stages .stages-wrp .arrows-vert-wrp .next-v {
+    margin-right: 20px;
+  }
+}
 .stages .stages-wrp .arrows-vert-wrp .prev-v {
   transform: rotate(90deg);
+}
+@media screen and (max-width: 800px) {
+  .stages .stages-wrp .arrows-vert-wrp .prev-v {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 1250px) {
   .stages .stages-wrp {
@@ -656,6 +683,8 @@ h2 {
     padding-top: 24px;
     text-align: center;
     max-width: 90%;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 .stages .stages-wrp .stages-text h5 {
@@ -1164,6 +1193,11 @@ footer .footer-wrp .quote p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 670px) {
+  footer .footer-wrp .quote p {
+    padding: 16px 24px;
+  }
+}
 footer .footer-wrp hr {
   width: 100%;
   height: 2px;
@@ -1179,6 +1213,13 @@ footer .footer-wrp .copyrite {
   text-align: center;
   color: #333333;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 880px) {
+  footer .footer-wrp .copyrite {
+    font-size: 13px;
+    text-transform: none;
+    margin: 0 auto;
+  }
 }
 
 #myVideo {
