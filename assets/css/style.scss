@@ -816,6 +816,9 @@ h2{
             .phone{
                 padding-top: 16px;
                 border-top: 2px solid #e0e0e0;
+                @media screen and (max-width: 880px) {
+                    font-size: 13px;
+                }
             }
             img{
                 width: 34px;
@@ -842,6 +845,7 @@ h2{
                 @media screen and (max-width: 880px) {
                     display: block;
                     margin-top: 16px;
+                    font-size: 13px;
                 }
             }
             &:nth-child(2){
@@ -901,6 +905,9 @@ h2{
                 align-items: center;
                 &:last-child{
                     margin-right: 0;
+                }
+                @media screen and (max-width: 880px) {
+                    margin-right: 8px;
                 }
             }
         }
@@ -978,6 +985,7 @@ footer{
             margin-bottom: 30px;
             @media screen and (max-width: 880px) {
                 flex-direction: column;
+                margin-bottom: 24px;
             }
             li{
                 margin-right: 50px;

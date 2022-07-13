@@ -904,6 +904,11 @@ h2 {
   padding-top: 16px;
   border-top: 2px solid #e0e0e0;
 }
+@media screen and (max-width: 880px) {
+  .contact-us .contact-wrp .cont-content-wrp .phone {
+    font-size: 13px;
+  }
+}
 .contact-us .contact-wrp .cont-content-wrp img {
   width: 34px;
   height: auto;
@@ -933,6 +938,7 @@ h2 {
   .contact-us .contact-wrp .cont-content-wrp .mail {
     display: block;
     margin-top: 16px;
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 880px) {
@@ -992,6 +998,11 @@ h2 {
 }
 .contact-us .contact-wrp ul li:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 880px) {
+  .contact-us .contact-wrp ul li {
+    margin-right: 8px;
+  }
 }
 .contact-us .contact-wrp form input, .contact-us .contact-wrp form select {
   width: 570px;
@@ -1077,6 +1088,7 @@ footer .footer-wrp ul {
 @media screen and (max-width: 880px) {
   footer .footer-wrp ul {
     flex-direction: column;
+    margin-bottom: 24px;
   }
 }
 footer .footer-wrp ul li {
