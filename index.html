@@ -105,21 +105,24 @@
     });
     }
     getData();
-    async function addClick(){
-        await fetch("https://62f8c2103eab3503d1dabacf.mockapi.io/clicked/1", {
-        method: "put",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            counter: Number(document.getElementById("title").textContent) + 1
-        })
-        }).then((res) => {
-            if(!res.ok){
-                alert('Занадто багато спроб, спробуй пізніше');
-            }
-        })
-        await getData();
+    function addClick(){
+        document.getElementById("title").textContent = Number(document.getElementById("title").textContent);
+        setInterval(async () => {
+            await fetch("https://62f8c2103eab3503d1dabacf.mockapi.io/clicked/1", {
+            method: "put",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                counter: Number(document.getElementById("title").textContent) + 1
+            })
+            }).then((res) => {
+                if(!res.ok){
+                    alert('Занадто багато спроб, спробуй пізніше');
+                }
+            })
+            await getData();
+        },5000)
     }
 </script>
 </html>
