@@ -102,12 +102,13 @@
     function getData(){
         fetch('https://62f8c2103eab3503d1dabacf.mockapi.io/clicked').then((resp) => resp.json()).then((data) => {
         document.getElementById("title").textContent = data[0].counter;
+        counter = data[0].counter;
     });
     }
     getData();
     let timeInterval;
     function addClick(){
-        document.getElementById("title").textContent = Number(document.getElementById("title").textContent) + 1;
+        document.getElementById("title").textContent = ++counter;
     }
     timeInterval = setInterval(async () => {
             await fetch("https://62f8c2103eab3503d1dabacf.mockapi.io/clicked/1", {
