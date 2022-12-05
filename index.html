@@ -117,7 +117,7 @@
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                counter: Number(document.getElementById("title").textContent)
+                counter: counter
             })
             }).then((res) => {
                 if(!res.ok){
