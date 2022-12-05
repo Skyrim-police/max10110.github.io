@@ -105,9 +105,13 @@
     });
     }
     getData();
+    let timeInterval;
     function addClick(){
+        if(timeInterval){
+            clearInterval(timeInterval);
+        }
         document.getElementById("title").textContent = Number(document.getElementById("title").textContent) + 1;
-        setInterval(async () => {
+        timeInterval = setInterval(async () => {
             await fetch("https://62f8c2103eab3503d1dabacf.mockapi.io/clicked/1", {
             method: "put",
             headers: {
